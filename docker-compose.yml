@@ -1,0 +1,19 @@
+#sudo docker-compose up
+version: "3"
+services:
+
+  service.testing.site:
+      image: image-site
+      restart: always
+      ports:
+          - "6001:6001"
+
+#  service.testing.mongoserver:
+#    image: mongo
+#    restart: always
+#    environment:
+#      MONGO_INITDB_ROOT_USERNAME: root
+#      MONGO_INITDB_ROOT_PASSWORD: example
+#    ports:
+#      - 27017:27017
+
